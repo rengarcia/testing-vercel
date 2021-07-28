@@ -1,0 +1,784 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #414345;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(40, 47%, 76%, 0.404), hsla(180, 13%, 28%, 0.795)), url(../img/portada.jpg); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(40, 47%, 76%, 0.418), hsla(180, 13%, 28%, 0.781)), url(../img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #414345;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 37px;
+    height: 37px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(210, 3%, 26%, 0.541);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #414345;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #414345;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+/**********BOTON 1: ABAJO***********/
+.lbl{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    transition: .2s;
+}
+   
+.lbl::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+}
+   
+#checkbox:checked + .lbl::after{
+    left: 36px;
+}
+   
+#checkbox:checked + .lbl{
+    background: #00C8B1;
+}
+   
+#checkbox{
+    display: none;
+}
+
+* {
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/**********BOTON 2: ARRIBA***********/
+.lbl1{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    right: 0px;
+    left: 0px;
+    transition: .2s;
+  }
+   
+.lbl1::after{
+content: '';
+display: block;
+width: 25px;
+height: 25px;
+background: #eee;
+border-radius: 100px;
+position: absolute;
+top: 4px;
+left: 4px;
+transition: .2s;
+}
+
+#checkbox1:checked + .lbl1::after{
+left: 36px;
+}
+
+#checkbox1:checked + .lbl1{
+background: #00C8B1;
+}
+
+#checkbox1{
+display: none;
+}
+
+/**********BOTON 3: IZQUIERDA***********/
+.lbl2{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    right: 0px;
+    left: 0px;
+    transition: .2s;
+  }
+   
+.lbl2::after{
+content: '';
+display: block;
+width: 25px;
+height: 25px;
+background: #eee;
+border-radius: 100px;
+position: absolute;
+top: 4px;
+left: 4px;
+transition: .2s;
+}
+
+#checkbox2:checked + .lbl2::after{
+left: 36px;
+}
+
+#checkbox2:checked + .lbl2{
+background: #00C8B1;
+}
+
+#checkbox2{
+display: none;
+}
+/**********BOTON 4: DERECHA ***********/
+.lbl3{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    right: 0px;
+    left: 0px;
+    transition: .2s;
+}
+   
+.lbl3::after{
+content: '';
+display: block;
+width: 25px;
+height: 25px;
+background: #eee;
+border-radius: 100px;
+position: absolute;
+top: 4px;
+left: 4px;
+transition: .2s;
+}
+
+#checkbox3:checked + .lbl3::after{
+left: 36px;
+}
+
+#checkbox3:checked + .lbl3{
+background: #00C8B1;
+}
+
+#checkbox3{
+display: none;
+}
+/**********BOTON 5: PARE ***********/
+.lbl4{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #a55f5f;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    top: -850px;
+    bottom: 0px;
+    right: 0px;
+    left: 1000px;
+    transition: .2s;
+}
+   
+.lbl4::after{
+content: '';
+display: block;
+width: 25px;
+height: 25px;
+background: #eee;
+border-radius: 100px;
+position: absolute;
+top: 4px;
+left: 4px;
+transition: .2s;
+}
+
+#checkbox4:checked + .lbl4::after{
+left: 36px;
+}
+
+#checkbox4:checked + .lbl4{
+background: #da1717;
+}
+
+#checkbox4{
+display: none;
+}
+/**********RELOJ***********/
+.wrap {
+	width: 80%;
+	max-width: 600px;
+    position: relative;
+	margin:auto;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+}
+
+.widget {
+	width: 60%;
+	margin: 2em;
+	/*margin:32px; */
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.fecha {
+	font-family: Oswald, Arial;
+	text-align: center;
+	font-size:1.1em;
+	margin-bottom: 0.3125rem;
+	/*margin-bottom: 5px;*/
+    color: #fff;
+	background: rgba(0,0,0,.5);
+	padding: 0.5px;
+	width: 85%;
+}
+
+.reloj {
+	font-family: Oswald, Arial;
+	width: 85%;
+	padding: 1px;
+	font-size: 2em;
+	text-align: center;
+    color: #fff;
+	background: rgba(0,0,0,.5);
+}
+
+.reloj .caja-segundos {
+	display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+	font-size: 1.3rem;
+	display: block;
+}
+
+/**********LOGO***********/
+#ner {
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+}
+
+#pare {
+    position: relative;
+    top: -925px;
+    bottom: 0px;
+    right: 0px;
+    left: 865px;
+}
+/**********TABLA CENTRAL 1***********/
+#tablaProductos {
+    position: relative;
+    font-size: 1.3em;
+}
+
+/********** TACOMETROS***********/
+#chart_div {
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+}
+.principal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicio-cont1{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind1{
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor1 {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor2{
+    padding: 60px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.servicio-ind2{
+    width: 100%;
+    text-align: center;
+}
+.servicio-cont2{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caja{
+    width: 480px;
+    height: 70px;
+    background: #fff;
+    position: relative;
+    top: -735px;
+    bottom: 0;
+    right: 0;
+    left: 360px;
+}
+.regresar{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+.regresar > a{
+    color:rgb(0, 0, 0);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.regresar > a:hover{
+    text-decoration: underline;
+}

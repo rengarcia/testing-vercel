@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Telescopio NER</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#Informacion">Información</a>
+            <a href="#Interfaz">Interfaz</a>
+            <a href="#Contacto">Contacto</a>
+            <a href="http://192.168.100.48:5000/">Cámara</a>
+        </nav>
+        <section class="textos-header">
+            <h1 id="Inicio">Observa una parte de la ciudad de Quito</h1>
+            <h2>Con un telescopio controlado</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo" id=Informacion>MODO DE USO</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/ng.jpeg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Modo Manual (Botones)</h3>
+                    <p>En la interfaz encontrará al lado izquierdo los botones con los que podrá
+                        controlar el telescopio en los ejes "x" (arriba, abajo) y "z" (izquierda, derecha).
+                    </p>
+                    <h3><span>2</span>Modo Automático (Coordenadas)</h3>
+                    <p>En la interfaz encontrará una tabla con la cual podrá ingresar los valores 
+                        en modo de ángulos para los ejes "x" (arriba, abajo) y "z" (izquierda, derecha).
+                    </p>
+                    <p>
+                        En el centro podrá visualizar la imagen que se está transmitiendo en vivo
+                        de lo que está observando el telescopio desde el lugar en el que se encuentra.
+                    </p>
+                    <div class="regresar">
+                        <a href="index.html">Inicio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Implementación del Proyecto</h2>
+                
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/img1.jpeg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img2.jpeg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img3.jpeg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img6.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img7.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="regresar">
+                    <a href="index.html">Inicio</a>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo" id="Interfaz">NER - TELESCOPIO CONTROLADO</h2>
+            <div align="center">
+                <div align="center">
+                    <div class="col-lg-5">
+                        <!--Modal-->
+                        <div id="modalAltaEdicion" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-primary text-light">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ingreso de ángulos</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form>
+                                    <div class="modal-body">
+                                        <input id="id" type="hidden"> <!-- ID que vamos a recibir de firebase -->
+                                        <div class="form-group">            
+                                            <p style="color:rgb(0, 0, 0);">EJE X</p>
+                                            <input id="eje_x" type="number" class="form-control" required>
+                                        </div>    
+                                        <div class="form-group">
+                                            <p style="color:rgb(0, 0, 0);">EJE Z</p>
+                                            <input id="eje_z" type="number" class="form-control" required>
+                                        </div>                                 
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" tabindex="2">Cancelar</button>
+                                        <button type="submit" id="btnGuardar" class="btn btn-primary" translate="1">Guardar</button>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <table id="tablaProductos" class="table table-bordered">
+                            <thead>
+                                <tr class="bg-dark text-light">
+                                <th scope="col">EJE X (Grados)</th>
+                                <th scope="col">EJE Z (Grados)</th>
+                                <th scope="col">ACCION</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bodyProductos">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor2"> 
+                <div class="servicio-cont2">
+                    <div class="servicio-ind2">
+                        <p>
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3" class="lbl3"></label>
+                            <img id="derecha" src="img/derecha.png"  style="width: 80px; height: 100px;">
+                        </p>
+                        <br>
+                        <p>
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2" class="lbl2"></label>
+                            <img id="izquierda" src="img/izquierda.png" style="width: 80px; height: 100px;">
+                        </p>
+                        <br>
+                        <p>
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1" class="lbl1"></label>
+                            <img id="arriba" src="img/arriba.png" style="width: 100px; height: 100px;">
+                        </p>
+                        <br>
+                        <p>
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="lbl"></label>
+                            <img id="abajo" src="img/abajo.png" style="width: 100px; height: 100px;">
+                        </p>
+                    </div>  
+                    <div class="servicio-ind2">
+                        <iframe src="http://crealab.com.mx" width="700" height="500" id="mira"></iframe>  
+                    </div>
+                    <div>
+                        <p>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="servicio-ind2">
+                        <div id="chart_div"></div>
+                    </div>
+                </div>
+                <div class="regresar">
+                    <a href="index.html">Inicio</a>
+                </div>
+            </div>
+            
+            <div class="caja">
+            </div>
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4" class="lbl4"></label>
+            <img id="pare" src="/img/pare.gif" style="width: 200px; height: 60px;">
+            
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo" id="Contacto">INTEGRANTES</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/northon.jpeg" alt="">
+                        <h3>Guamán Northon</h3> 
+                        <p>Estudiante de Ingeniería Mecatrónica</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/edgar.jpeg" alt="">
+                        <h3>Guzmán Edgar</h3>
+                        <p>Estudiante de Ingeniería Mecatrónica</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/rhonny.jpeg" alt="">
+                        <h3>Pachacama Rhonny</h3>
+                        <p>Estudiante de Ingeniería Mecatrónica</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor1">
+                <div class="servicio-cont1">
+                    <div class="servicio-ind1">
+                        <img src="img/ner.jpg" height="100px" alt="">
+                    </div>
+                    <div class="servicio-ind1">
+                        <div class="wrap">
+                    <div class="widget">
+                        <div class="fecha">
+                            <p id="diaSemana" class="diaSemana">Martes</p>
+                            <p id="dia" class="dia">27</p>
+                            <p>de </p>
+                            <p id="mes" class="mes">Octubre</p>
+                            <p>del </p>
+                            <p id="year" class="year">2015</p>
+                        </div>
+                        <div class="reloj">
+                            <p id="horas" class="horas">11</p>
+                            <p>:</p>
+                            <p id="minutos" class="minutos">48</p>
+                            <p>:</p>
+                            <div class="caja-segundos">
+                                <p id="ampm" class="ampm">AM</p>
+                                <p id="segundos" class="segundos">12</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="regresar">
+                    <a href="#">Inicio</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfonos</h4>
+                <p>099 711 2261</p>
+                <p>099 814 0707</p>
+                <p>098 301 4647</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>npguaman@espe.edu.ec</p>
+                <p>egguzman2@espe.edu.ec</p>
+                <p>rapachacama@espe.edu.ec</p>
+            </div>
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>Quito - Ecuador</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Introducción a Sistemas Ciberfísicos 2021|NRC: 5782</h2>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script> 
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    
+    <script src="public/teles.js"></script>
+</body>
+
+</html>
